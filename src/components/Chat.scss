@@ -34,6 +34,7 @@ $Poseidon-5-hex: #DAFDBA;
     transform: translateX(0px);
     transition: 1s;
     span{
+        max-width: 800px;
         padding: 10px 20px;
         background-color: white;
         color: black;
@@ -53,6 +54,7 @@ $Poseidon-5-hex: #DAFDBA;
     justify-content: end;
     transition: 1s;
     span{
+        max-width: 800px;
         padding: 10px 20px;
         background-color: white;
         color: black;

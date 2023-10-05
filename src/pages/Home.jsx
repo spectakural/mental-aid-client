@@ -11,6 +11,8 @@ export const Home = () => {
 
     useEffect(()=>{
         console.log(chats)
+        let msgSpace = document.getElementById('message-space')
+        msgSpace.scrollTop = msgSpace.scrollHeight
     },[chats])
 
     const handleKeyPress = (e)=>{
@@ -40,7 +42,7 @@ export const Home = () => {
     <div className="home-container">
         <div className="chat-container">
             <div className="messages-container">
-                <div className="message-space">
+                <div className="message-space" id='message-space'>
                     {chats.map((chat, i)=>(
                         <Chat chat={chat} key={i} />
                     ))}

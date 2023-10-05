@@ -39,19 +39,21 @@ $Poseidon-5-hex: #DAFDBA;
             display: flex;
             flex-direction: column;
             justify-content: end;
-            overflow-y: scroll;
-            &::-webkit-scrollbar {
-                display: none;
-            }
+            // background-color: blue;
+            // overflow-y: scroll;
+            // &::-webkit-scrollbar {
+            //     display: none;
+            // }
 
             .message-space{
                 // background-color: red;
                 border-radius: 20px;
-                transition: 1s;
+                transition: height 1s ease-in-out;
                 // padding: 10px;
                 display: flex;
                 flex-direction: column;
                 overflow-y: scroll;
+                scroll-behavior: smooth;
                 
                 &::-webkit-scrollbar {
                     display: none;
